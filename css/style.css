@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(160, 114, 114, 0.993);
+    margin: 0px;
+    font-size: 20px ;
+    color: bisque;
+}
+header {
+    background-color: rgba(238, 54, 54, 0.979);
+    min-height: 60px;
+    display: flex;
+}
+.conteiner-logo{
+    height: 65px;
+    width: 120px;
+    display: inline;
+    overflow: hidden;
+}
+nav a{
+    color: aliceblue;
+    display: inline-block;
+    padding: 20px 15px;
+    vertical-align: top;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: rgba(54, 238, 152, 0.979);
+    color: rgb(42, 165, 108);
+    font-size: 30px;
+}
+nav a:visited{
+    color: aqua;
+    background-color: beige;
+}
+nav a:active{
+    color: blue;
+    background: color 10px; ;
+}
+
+aside {
+    width: 10%;
+    height: 95vh;
+    background-color: rgba(160, 114, 114, 0.24);
+    float: left;
+}
+aside a {
+    display: block;
+    padding: 25px 10px;
+    text-align: left;
+    color: azure;
+    text-decoration: none;
+  
+}
+aside a:hover{
+    background-color: blanchedalmond;
+    color: brown;
+}
+aside:anth-child(2n){
+    background-color: blueviolet;
+}
+aside:anth-child(2n-1){
+    background-color: rgb(226, 43, 198);
+}
+p:first-child{
+    color:blueviolet
+}
+p::first-letter{
+    font-size: 50px;
+    color:blueviolet;
+    font-weight: bolder;
+}
+p::first-line{
+    font-size: 15px;
+    color: blueviolet;
+}
+main {
+    background: linear-gradient(rgba(189, 110, 110, 0.116)),rgba(160, 114, 114, 0.993), url(https://st.depositphotos.com/1105977/2471/i/450/depositphotos_24714647-stock-photo-pizza.jpg);
+    background-size: cover;
+    width:90% ;
+    float: left;
+    height: 95vh;
+    min-height: 95px;
+}
+footer {
+    min-height: 60;
+    background-color: rgb(204, 121, 27);
+    text-decoration:none ;
+}
+.conteiner{
+    display:flex ;
+    min-height: 80px;
+}
+.conteiner-index{
+    background-color: rgba(160, 114, 114, 0.24);
+    border-radius: 10px;
+    padding: 20px 2%;
+    margin: 20px 4%;
+    overflow: auto;
+
+}
+.img-galeria{
+    width: 15vw;
+    border: 2px solid rgb(115, 73, 73);
+    border-radius: 20px;
+    height: 150px;
+    margin: 5px;
+}
+.galeria{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+}
+[class*='col-'] {
+    float: left;
+}
+.col-1{width: 10%;}
+.col-2{width: 20%;}
+.col-3{width: 30%;}
+.col-4{width: 40%;}
+.col-5{width: 50%;}
+.col-6{width: 60%;}
+.col-7{width: 70%;}
+.col-8{width: 80%;}
+.col-9{width: 90%;}
+.col-10{width: 100%;}
+
+.recenzia {
+   min-height: 75px;
+   margin: 10px 0px;
+   background-color:rgb;
+   padding: 7px;
+   font-size: 18px;
+   border-radius: 7px;
+   border: 2px solid rgb(204, 121, 27);
+
+}
+.row {
+    overflow: auto;
+}
+.recenzia img {
+    border: 2px solid rgb(204, 121, 27);
+    border-radius: 50%;
+    height: 100px;
+    width: 50px;
+}
+.recenzia p{
+    color: brown;
+    text-align:center ;
+}
+.nota{
+    font-size: 25px;
+    color: brown;
+    text-align: center;
+}
+.center{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+hr{
+    border-top:4px ;
+}
+.flex{
+    display: flex;
+}
+.produs{
+    border: 1px solid rgb(58, 11, 104);
+    border-radius: 10px;
+    background-color: rgb(138, 95, 181);
+    padding: 15px;
+    margin-top: 25px;
+    margin: left 6%;
+    margin-right: 6%;
+}
+.img-produs{
+    border: 2px solid rgb(58, 11, 104);
+    border-radius: 15px;
+    box-shadow: 2px 3px rgb(58, 11, 104);
+    height: 200px;
+
+}
+.titlu-produs{
+    font-size: 22px;
+    font-weight: bold;
+}
+.pret-produs{
+    text-decoration: underline;
+    margin-top: 30px;
+}
+.ingridiente{
+    font-style: italic;
+    margin-top: 30px;
+}
+.text-produs{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.btn-comanda{
+    margin-top: 30px;
+    border: 2px solid rebeccapurple;
+    border-radius: 7px;
+    padding: 10px;
+    cursor:pointer ;
+}
+.btn-comanda:hover{
+    background-color: unset;
+}
+.abzat{
+    color: brown important;
+    font-size: 26px;
+    font-family: Arial;
+}
+.container-contacte{
+    min-height: 250px;
+    background-color: rgba(160, 114, 114, 0.551);
+    margin: 10px 6%;
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-shadow: 1px 1px 5px;
+}
+.forma-contact{
+    padding: 0 10px;
+}
+.forma-contact input, .forma-contact textarea {
+    width: 100;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(250, 235, 215, 0.511);
+    border: 1px solid;
+    color: silver;
+}
+.forma-contact input:focus, .forma-contact textarea:focus {
+    border: 1px rgb(138, 95, 181);
+}
+.transmit:hover{
+    cursor: pointer;
+    border: 1px solid rgba(192, 160, 225, 0.396);
+    border-color: rgb(138, 95, 181);
+
+}
+.telefon-contact, .adres-contact {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Georgia' ;
+
+}
+.center{
+    text-align: center;
+}
+.contact{
+    text-align: left;
+
+}
+.slaideshow-conteiner{
+    position: relative;
+    margin: 50px auto 20px;
+    border: 3px solid rgb(220, 220, 206);
+    box-shadow: 10px 10px 15px rgb(220, 220, 206);
+}
+.slide{
+    display: none;
+    height: 100%;
+}
+.slide img{
+    height: 100%;
+}
+.textnumber{
+    font-size: 25px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: brown;
+    width: 35;
+    padding: 2px 1px 2px;
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+.text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+    bottom: 80px;
+}
+.orar{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color:rgb(228, 165, 92) ;
+    padding: 15px;
+    color: #3DF1FE;
+}
+
+@keyframes povorot{
+    0% {transform:rotate(-10deg) ;}
+    100% {transform:rotate(-6deg) ;}
+}
+@media(max-width:1300px){
+    aside{
+        width:15px;
+    }
+    main{
+        width:85%;   
+    }
+    [class*="col-"]{
+        float:left;
+        width: 100%;
+    }
+
+}
+@media(max-width:1000px){
+    aside{
+        width:20px;
+    }
+    main{
+        width:80%;   
+    }
+    [class*="col-"]{
+        float:left;
+        width: 100%;
+    }
+
+}
+@media(max-width:770px){
+    aside{
+        display:20px;
+    }
+    main{
+        width:80%;   
+    }
+    [class*="col-"]{
+        float:left;
+        width: 100%;
+    }
+
+}
